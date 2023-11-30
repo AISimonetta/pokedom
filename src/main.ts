@@ -24,22 +24,8 @@ const getCompanyHTML = (pokemonArray: Pokemon[]): string => {
   return cardHtml;
 };
 
-getCompanyHTML;
-
 const cardcardForHtml = getCompanyHTML(pokemonArray);
 card.innerHTML = cardcardForHtml;
 
-
-const firstLettertoUpperCase = (pokemonArray) => {
-return pokemonArray.map((name) => {
-    const upperCase = name.charAt(0).toUpperCase();
-    return upperCase
-});
-}
-
-const nameUpdated = firstLettertoUpperCase(pokemonArray);
-card.innerHTML = nameUpdated;
-
-  //filtered
 const filteredNames = pokemonArray.map(pokemons => pokemons.name);
 console.log(filteredNames);
